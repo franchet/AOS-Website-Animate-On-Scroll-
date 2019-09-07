@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Acrylic Painting</title>
 </head>
@@ -26,7 +27,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" data-aos="fade-left">
             <img src="img/paint2.png" alt="">
             <div>
                 <h3>Acrylic Painting Two</h3>
@@ -35,7 +36,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" data-aos="fade-right">
             <img src="img/paint3.png" alt="">
             <div>
                 <h3>Acrylic Painting Three</h3>
@@ -44,7 +45,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" data-aos="fade-left">
             <img src="img/paint4.png" alt="">
             <div>
                 <h3>Acrylic Painting Four</h3>
@@ -53,7 +54,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" data-aos="fade-right">
             <img src="img/paint5.png" alt="">
             <div>
                 <h3>Acrylic Painting Five</h3>
@@ -63,7 +64,13 @@
         </section>
     </main>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>
